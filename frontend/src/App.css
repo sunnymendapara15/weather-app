@@ -1,0 +1,155 @@
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1e3a8a, #0f172a 70%);
+  padding: 2rem;
+}
+
+.panel {
+  width: min(620px, 100%);
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 24px;
+  padding: 2.5rem;
+  color: #f8fafc;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.45);
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
+
+.subhead {
+  margin-top: 0.25rem;
+  color: #cbd5f5;
+}
+
+.search-form {
+  margin: 2rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  flex: 1;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  font-size: 1rem;
+}
+
+.search-form button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, #38bdf8, #7c3aed);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-form input:disabled,
+.search-form button:disabled {
+  opacity: 0.75;
+}
+
+.error {
+  margin: 0;
+  color: #f87171;
+  font-weight: 600;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.current-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.current-card h2 {
+  margin: 0.35rem 0;
+  font-size: 2.4rem;
+}
+
+.status {
+  color: #a5b4fc;
+  margin: 0;
+}
+
+.current-meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #94a3b8;
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.daily-card {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.daily-grid article {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+}
+
+.daily-grid .date {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.daily-grid .code {
+  margin: 0;
+  color: #cbd5f5;
+  font-size: 0.9rem;
+}
+
+.daily-grid .temp {
+  margin-top: 0.4rem;
+  font-weight: 600;
+}
+
+.muted {
+  margin: 0;
+  color: #94a3b8;
+}
